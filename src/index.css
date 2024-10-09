@@ -1,0 +1,84 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: 'VT323', monospace;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.dark {
+  color: #FFD700;
+}
+
+.light {
+  color: #800080;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Glassmorphism styles */
+.glassmorphism {
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark .glassmorphism {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.light .glassmorphism {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(128, 0, 128, 0.2);
+}
+
+/* Input styles */
+.dark input, .dark textarea {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.light input, .light textarea {
+  background-color: rgba(128, 0, 128, 0.1);
+  color: #800080;
+  border: 1px solid rgba(128, 0, 128, 0.3);
+}
+
+/* Button styles */
+.dark button {
+  background-color: #FFD700;
+  color: #000000;
+}
+
+.light button {
+  background-color: #800080;
+  color: #FFFFFF;
+}
+
+.dark button:hover {
+  background-color: #FFED8A;
+}
+
+.light button:hover {
+  background-color: #A020F0;
+}
